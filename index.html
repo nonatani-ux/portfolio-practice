@@ -1,1 +1,365 @@
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evergreen Academy – Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════ NAVBAR ══════════════════ -->
+
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">🌿 Evergreen <span>Academy</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Enrol Now</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" style="color:var(--sage);font-weight:600;">Enrol Now →</a>
+</nav>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+
+<main>
+  <div style="background:linear-gradient(135deg,var(--cream) 55%, var(--warm) 100%);">
+    <section class="hero">
+
+```
+  <!-- Left: Text -->
+  <div class="hero-text">
+    <div class="hero-badge">🌱 Nurturing Minds Since 2005</div>
+    <h1>Where Every Child <em>Thrives</em> &amp; Grows</h1>
+    <p class="hero-desc">Evergreen Academy offers a rich, modern curriculum in a calm, inclusive environment — preparing students for a confident future from Early Years through Sixth Form.</p>
+    <div class="hero-btns">
+      <a href="about.html" class="btn btn-primary">Explore Our School</a>
+      <a href="contact.html" class="btn btn-outline">Book a Visit</a>
+    </div>
+  </div>
+
+  <!-- Right: Image -->
+  <div class="hero-img-col">
+    <div class="hero-img-frame">
+      <!--
+        REPLACE IMAGE:
+        Delete the .img-placeholder div below and add:
+        <img src="images/hero.jpg" alt="Students at Evergreen Academy">
+      -->
+      <div class="img-placeholder">
+        <div class="placeholder-icon">🏫</div>
+        Replace with your school photo
+      </div>
+    </div>
+
+    <!-- Small floating badge — stays on desktop, hidden on mobile -->
+    <div class="hero-img-badge">
+      <div class="badge-icon">🏆</div>
+      <div>
+        <strong>Top-Rated School</strong>
+        <span>Outstanding Ofsted 2024</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+```
+
+  </div>
+
+  <!-- ══════════════════ STATS ══════════════════ -->
+
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="1200" data-suffix="+">0</div>
+        <div class="stat-label">Students Enrolled</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="85" data-suffix="+">0</div>
+        <div class="stat-label">Qualified Teachers</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="18" data-suffix="+">0</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number" data-target="97" data-suffix="%">0</div>
+        <div class="stat-label">Satisfaction Rate</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ FEATURES ══════════════════ -->
+
+  <section class="features section-pad">
+    <div class="container">
+      <div class="features-header reveal">
+        <div class="tag">Why Evergreen Academy</div>
+        <h2 class="section-title">An Environment Built for <em>Learning</em></h2>
+        <p class="section-sub">We combine academic rigour with creative freedom to produce well-rounded, curious and confident learners.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">📚</div>
+          <h3>Holistic Curriculum</h3>
+          <p>Balanced academics alongside arts, sports and life-skills to develop the whole child inside and outside the classroom.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🔬</div>
+          <h3>STEM Labs</h3>
+          <p>State-of-the-art science, technology and robotics facilities for hands-on discovery and real-world problem solving.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🌍</div>
+          <h3>Global Perspective</h3>
+          <p>International exchange programmes and multicultural events prepare every student to thrive in a connected world.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🤝</div>
+          <h3>Pastoral Support</h3>
+          <p>Dedicated counsellors and mentors ensure every student feels seen, safe and supported throughout their journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ PROGRAMMES PREVIEW ══════════════════ -->
+
+  <section class="programmes section-pad">
+    <div class="container">
+      <div class="programmes-header reveal">
+        <div>
+          <div class="tag">Our Programmes</div>
+          <h2 class="section-title">Pathways for Every Learner</h2>
+        </div>
+        <a href="about.html" class="btn btn-primary">View All Courses</a>
+      </div>
+      <div class="programmes-grid">
+
+```
+    <div class="prog-card reveal">
+      <div class="prog-card-img" style="background:linear-gradient(135deg,#d8f0e2,#a8d8bc);">
+        <!--
+          REPLACE IMAGE:
+          <img src="images/early-years.jpg" alt="Early Years">
+        -->
+        🎨
+      </div>
+      <div class="prog-card-body">
+        <div class="prog-level">Foundation</div>
+        <h3>Early Years (Ages 3–5)</h3>
+        <p>Play-based learning that ignites curiosity and builds strong foundational skills in a warm, nurturing setting.</p>
+        <a href="about.html" class="prog-link">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="prog-card reveal">
+      <div class="prog-card-img" style="background:linear-gradient(135deg,#fff3d0,#ffd880);">
+        <!--
+          REPLACE IMAGE:
+          <img src="images/primary.jpg" alt="Primary School">
+        -->
+        ✏️
+      </div>
+      <div class="prog-card-body">
+        <div class="prog-level">Primary</div>
+        <h3>Primary School (Ages 6–11)</h3>
+        <p>Core literacy, numeracy, sciences and the arts in a supportive classroom with small group sizes.</p>
+        <a href="about.html" class="prog-link">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="prog-card reveal">
+      <div class="prog-card-img" style="background:linear-gradient(135deg,#dce8ff,#a8c0f8);">
+        <!--
+          REPLACE IMAGE:
+          <img src="images/secondary.jpg" alt="Secondary School">
+        -->
+        🔭
+      </div>
+      <div class="prog-card-body">
+        <div class="prog-level">Secondary</div>
+        <h3>Secondary School (Ages 12–18)</h3>
+        <p>Advanced subjects, IGCSE and A-Level preparation, plus dedicated university guidance and careers support.</p>
+        <a href="about.html" class="prog-link">Learn more →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- ══════════════════ TESTIMONIALS ══════════════════ -->
+
+  <section class="testimonials section-pad">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <div class="tag">What Parents Say</div>
+        <h2 class="section-title">Voices from Our Community</h2>
+      </div>
+      <div class="testi-track">
+
+```
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p>"Evergreen has completely transformed our daughter's love of learning. The teachers genuinely care and the environment is wonderfully calm."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <!--
+            REPLACE IMAGE:
+            <img src="images/parent1.jpg" alt="Sarah M.">
+          -->
+          👩
+        </div>
+        <div class="testi-info">
+          <strong>Sarah M.</strong>
+          <span>Parent – Year 7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p>"The STEM programme is outstanding. My son has gone from dreading science to building robots at home every single weekend!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <!--
+            REPLACE IMAGE:
+            <img src="images/parent2.jpg" alt="James O.">
+          -->
+          👨
+        </div>
+        <div class="testi-info">
+          <strong>James O.</strong>
+          <span>Parent – Year 9</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p>"Small class sizes and dedicated pastoral support make all the difference. Our twins have absolutely flourished here."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <!--
+            REPLACE IMAGE:
+            <img src="images/parent3.jpg" alt="Amara K.">
+          -->
+          👩
+        </div>
+        <div class="testi-info">
+          <strong>Amara K.</strong>
+          <span>Parent – Year 4 &amp; 6</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p>"The global exchange programme gave my son real-world confidence. He starts at his first-choice university this September!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">
+          <!--
+            REPLACE IMAGE:
+            <img src="images/parent4.jpg" alt="David T.">
+          -->
+          👨
+        </div>
+        <div class="testi-info">
+          <strong>David T.</strong>
+          <span>Parent – Year 13 Graduate</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- ══════════════════ CTA BAND ══════════════════ -->
+
+  <div class="cta-band reveal">
+    <div class="container">
+      <div>
+        <h2>Ready to Join the Evergreen Family?</h2>
+        <p>Applications are open for the 2025/26 academic year. Limited spaces available.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-primary">Apply Now</a>
+        <a href="contact.html" class="btn btn-outline">Book an Open Day</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>🌿 Evergreen Academy</h4>
+        <p>Nurturing curious minds and confident hearts since 2005. A place where every child truly belongs.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Admissions</a>
+        </div>
+      </div>
+      <div>
+        <h4>Programmes</h4>
+        <div class="footer-links">
+          <a href="about.html">Early Years</a>
+          <a href="about.html">Primary School</a>
+          <a href="about.html">Secondary School</a>
+          <a href="about.html">Sixth Form</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <div class="footer-links">
+          <a href="#">📍 12 Greenfield Road, London</a>
+          <a href="tel:+44020123456">📞 +44 020 1234 5678</a>
+          <a href="mailto:info@evergreenacademy.ac">✉️ info@evergreenacademy.ac</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Evergreen Academy. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Use</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
