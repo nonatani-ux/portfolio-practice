@@ -2,651 +2,311 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us – Evergreen Academy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us – Evergreen Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ══════════════════ NAVBAR ══════════════════ -->
+<!-- ══ NAVBAR ══ -->
 
 <header class="navbar">
-  <div class="container">
-    <a href="index.html" class="nav-logo">🌿 Evergreen <span>Academy</span></a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="btn btn-primary">Enrol Now</a></li>
-      </ul>
-    </nav>
-    <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+<div class="container">
+<a href="index.html" class="nav-logo">🌿 Evergreen <span>Academy</span></a>
+<nav>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html" class="active">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="contact.html" class="btn btn-primary">Enrol Now</a></li>
+</ul>
+</nav>
+<button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</button>
+</div>
 </header>
-
 <nav class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a>
-  <a href="about.html" class="active">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" style="color:var(--sage);font-weight:600;">Enrol Now →</a>
+<a href="index.html">Home</a>
+<a href="about.html" class="active">About</a>
+<a href="contact.html">Contact</a>
+<a href="contact.html" class="mobile-enrol">Enrol Now →</a>
 </nav>
 
-<!-- ══════════════════ PAGE BANNER ══════════════════ -->
+<!-- ══ PAGE BANNER ══ -->
 
 <div class="page-banner">
-  <div class="container">
-    <div class="tag">Our Story</div>
-    <h1>About Evergreen Academy</h1>
-    <p>A vibrant learning community dedicated to inspiring every student to discover their own unique potential.</p>
-  </div>
+<div class="banner-img"><img src="images/school-grounds.jpg" alt="Evergreen Academy grounds"></div>
+<div class="banner-overlay"></div>
+<div class="container banner-content">
+<div class="tag">Our Story</div>
+<h1>About Evergreen Academy</h1>
+<p>A vibrant learning community dedicated to inspiring every student to discover their unique potential.</p>
 </div>
-<div class="breadcrumb">
-  <div class="container">
-    <a href="index.html">Home</a> › About Us
-  </div>
 </div>
+<div class="breadcrumb"><div class="container"><a href="index.html">Home</a> › About Us</div></div>
 
 <main>
 
-  <!-- ══════════════════ MISSION ══════════════════ -->
+<!-- ══ MISSION ══ -->
 
-  <section class="mission section-pad">
-    <div class="container">
-      <div class="mission-grid">
+<section class="section-pad bg-white">
+<div class="container mission-grid">
+<div class="mission-img reveal zoom-img">
+<img src="images/school-building.jpg" alt="Evergreen Academy building">
+</div>
+<div class="mission-content reveal">
+<div class="tag">Our Mission</div>
+<h2 class="section-title">Educating Hearts &amp; Minds for Life</h2>
+<p>Founded in 2005, Evergreen Academy has grown into one of the region's most respected independent schools. Our approach blends academic rigour with a deep commitment to personal development, wellbeing and community.</p>
+<p>We believe every child is capable of extraordinary things — our role is to provide the environment, mentorship and opportunities that help them find out.</p>
+<ul class="value-list">
+<li>Accredited Cambridge &amp; IB curriculum delivery</li>
+<li>Average class size of 18 students for personal attention</li>
+<li>Inclusive, diverse and welcoming school community</li>
+<li>State-of-the-art STEM labs and performing arts centre</li>
+<li>Strong alumni network spanning 40+ countries</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- ══ WHY CHOOSE US ══ -->
+
+<section class="section-pad bg-warm">
+<div class="container">
+<div class="section-header reveal">
+<div class="tag">Why Choose Us</div>
+<h2 class="section-title">What Makes Evergreen Different</h2>
+<p class="section-sub">From our teaching philosophy to our world-class facilities, here is why families choose us year after year.</p>
+</div>
+<div class="why-grid">
+<div class="why-card reveal"><div class="why-icon">🏆</div><h3>Outstanding Results</h3><p>97% of Year 13 graduates secure university placements, with 42% attending Russell Group institutions.</p></div>
+<div class="why-card reveal"><div class="why-icon">👥</div><h3>Small Class Sizes</h3><p>A maximum of 20 students per class means every child receives meaningful individual attention daily.</p></div>
+<div class="why-card reveal"><div class="why-icon">🎭</div><h3>Rich Extracurricular Life</h3><p>Over 60 clubs and activities — from robotics and drama to debate and competitive sports teams.</p></div>
+<div class="why-card reveal"><div class="why-icon">🧘</div><h3>Wellbeing First</h3><p>Dedicated counsellors, mindfulness sessions and a peer-mentoring programme keep our community thriving.</p></div>
+<div class="why-card reveal"><div class="why-icon">🌐</div><h3>Global Connections</h3><p>Exchange programmes with partner schools in Japan, Germany and Canada broaden every student's world.</p></div>
+<div class="why-card reveal"><div class="why-icon">🔬</div><h3>Modern Facilities</h3><p>Purpose-built science labs, a 500-seat auditorium, Olympic-size pool and fully equipped maker space.</p></div>
+<div class="why-card reveal"><div class="why-icon">📖</div><h3>Experienced Staff</h3><p>85 qualified teachers, 78% with postgraduate degrees, averaging 12 years of teaching experience.</p></div>
+<div class="why-card reveal"><div class="why-icon">💰</div><h3>Scholarship Opportunities</h3><p>Annual merit and needs-based scholarships ensuring access to an Evergreen education for all families.</p></div>
+</div>
+</div>
+</section>
+
+<!-- ══ COURSES TABS ══ -->
+
+<section class="section-pad bg-cream">
+<div class="container">
+<div class="section-header reveal">
+<div class="tag">Academic Programmes</div>
+<h2 class="section-title">Courses We Offer</h2>
+<p class="section-sub">From our youngest learners to our A-Level students, we offer structured, inspiring pathways at every stage.</p>
+</div>
+<div class="tab-buttons">
+<button class="tab-btn active" data-tab="eyfs">Early Years</button>
+<button class="tab-btn" data-tab="primary">Primary</button>
+<button class="tab-btn" data-tab="secondary">Secondary</button>
+<button class="tab-btn" data-tab="sixth">Sixth Form</button>
+</div>
 
 ```
-    <div class="mission-img-wrap reveal">
-      <!--
-        REPLACE IMAGE:
-        Delete the .img-placeholder div and add:
-        <img src="images/school-building.jpg" alt="Evergreen Academy building">
-      -->
-      <div class="img-placeholder">
-        <div class="placeholder-icon">🌳</div>
-        Replace with your school photo
-      </div>
-    </div>
+<div class="tab-panel active" id="panel-eyfs">
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/kids-class.jpg" alt="Early Years"></div><div class="course-body"><div class="course-level">Foundation · Ages 3–4</div><h3>Nursery</h3><p>Play-based exploration of language, numbers, creativity and social skills.</p><div class="course-tags"><span class="course-tag">Half or Full Day</span><span class="course-tag">EYFS Framework</span></div></div></div>
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/classroom-decorated.jpg" alt="Reception"></div><div class="course-body"><div class="course-level">Foundation · Ages 4–5</div><h3>Reception</h3><p>The bridge to formal learning — phonics, early maths, PSHE and hands-on discovery every day.</p><div class="course-tags"><span class="course-tag">Full Day</span><span class="course-tag">EYFS Framework</span></div></div></div>
+</div>
 
-    <div class="mission-content reveal">
-      <div class="tag">Our Mission</div>
-      <h2 class="section-title">Educating Hearts &amp; Minds for Life</h2>
-      <p>Founded in 2005, Evergreen Academy has grown into one of the region's most respected independent schools. Our approach blends academic rigour with a deep commitment to personal development, wellbeing and community.</p>
-      <p>We believe every child is capable of extraordinary things — our role is to provide the environment, mentorship and opportunities that help them find out.</p>
-      <ul class="value-list">
-        <li>Accredited Cambridge &amp; IB curriculum delivery</li>
-        <li>Average class size of 18 students for personal attention</li>
-        <li>Inclusive, diverse and welcoming school community</li>
-        <li>State-of-the-art STEM labs and performing arts centre</li>
-        <li>Strong alumni network spanning 40+ countries</li>
-      </ul>
-    </div>
+<div class="tab-panel" id="panel-primary">
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/classroom-bright.jpg" alt="Key Stage 1"></div><div class="course-body"><div class="course-level">Primary · Years 1–2 · Ages 5–7</div><h3>Key Stage 1</h3><p>English, Mathematics, Science, Art, PE and Computing with specialist teachers.</p><div class="course-tags"><span class="course-tag">National Curriculum</span><span class="course-tag">SATs Prep</span></div></div></div>
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/classroom-green.jpg" alt="Key Stage 2"></div><div class="course-body"><div class="course-level">Primary · Years 3–6 · Ages 7–11</div><h3>Key Stage 2</h3><p>Deeper study in core subjects plus French or Mandarin, History, Geography and Music.</p><div class="course-tags"><span class="course-tag">National Curriculum</span><span class="course-tag">KS2 SATs</span></div></div></div>
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/lab-greenhouse.jpg" alt="Creative Arts"></div><div class="course-body"><div class="course-level">Enrichment · All Year Groups</div><h3>Creative Arts &amp; Science</h3><p>Individual instrument tuition, art club, greenhouse science and end-of-term drama productions.</p><div class="course-tags"><span class="course-tag">Elective</span><span class="course-tag">Graded Exams</span></div></div></div>
+</div>
 
-  </div>
+<div class="tab-panel" id="panel-secondary">
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/classroom-students.jpg" alt="Key Stage 3"></div><div class="course-body"><div class="course-level">Secondary · Years 7–9 · Ages 11–14</div><h3>Key Stage 3</h3><p>Broad curriculum across Sciences, Humanities, Languages, Technology and the Creative Arts.</p><div class="course-tags"><span class="course-tag">National Curriculum</span><span class="course-tag">3 Sciences</span></div></div></div>
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/campus-court.jpg" alt="IGCSE"></div><div class="course-body"><div class="course-level">GCSE / IGCSE · Years 10–11 · Ages 14–16</div><h3>IGCSE Programme</h3><p>Cambridge IGCSE in up to 12 subjects including Sciences, Humanities and Business Studies.</p><div class="course-tags"><span class="course-tag">Cambridge IGCSE</span><span class="course-tag">12 Subjects</span></div></div></div>
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/sports-pitch.jpg" alt="Sports Academy"></div><div class="course-body"><div class="course-level">Enrichment · Years 7–11</div><h3>Sports Academy</h3><p>Football, netball, swimming, tennis and athletics with competitive fixtures and elite development squads.</p><div class="course-tags"><span class="course-tag">Competitive</span><span class="course-tag">GCSE PE</span></div></div></div>
+</div>
+
+<div class="tab-panel" id="panel-sixth">
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/classroom-board.jpg" alt="A-Level Sciences"></div><div class="course-body"><div class="course-level">A-Level · Years 12–13 · Ages 16–18</div><h3>A-Level Sciences</h3><p>Biology, Chemistry, Physics and Mathematics with a strong record of Oxbridge and medical school entry.</p><div class="course-tags"><span class="course-tag">A-Level</span><span class="course-tag">EPQ Available</span></div></div></div>
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/campus-walkway.jpg" alt="A-Level Humanities"></div><div class="course-body"><div class="course-level">A-Level · Years 12–13 · Ages 16–18</div><h3>A-Level Humanities</h3><p>English Literature, History, Economics, Psychology, Sociology, Politics and Law with expert guidance.</p><div class="course-tags"><span class="course-tag">A-Level</span><span class="course-tag">UCAS Support</span></div></div></div>
+<div class="course-card"><div class="course-banner zoom-img"><img src="images/lab-greenhouse.jpg" alt="Computer Science"></div><div class="course-body"><div class="course-level">A-Level · Years 12–13 · Ages 16–18</div><h3>Computer Science &amp; Technology</h3><p>Programming, algorithms, cyber security and AI fundamentals with an industry mentorship scheme.</p><div class="course-tags"><span class="course-tag">A-Level</span><span class="course-tag">Industry Links</span></div></div></div>
 </div>
 ```
 
-  </section>
+</div>
+</section>
 
-  <!-- ══════════════════ WHY CHOOSE US ══════════════════ -->
+<!-- ══ GALLERY ══ -->
 
-  <section class="why section-pad">
-    <div class="container">
-      <div class="why-header reveal">
-        <div class="tag">Why Choose Us</div>
-        <h2 class="section-title">What Makes Evergreen Different</h2>
-        <p class="section-sub">From our teaching philosophy to our world-class facilities, here is why families choose us year after year.</p>
-      </div>
-      <div class="why-grid">
-        <div class="why-card reveal">
-          <div class="why-icon">🏆</div>
-          <h3>Outstanding Results</h3>
-          <p>97% of Year 13 graduates secure university placements, with 42% attending Russell Group institutions.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon">👥</div>
-          <h3>Small Class Sizes</h3>
-          <p>A maximum of 20 students per class means every child receives meaningful individual attention daily.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon">🎭</div>
-          <h3>Rich Extracurricular Life</h3>
-          <p>Over 60 clubs and activities — from robotics and drama to debate and competitive sports teams.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon">🧘</div>
-          <h3>Wellbeing First</h3>
-          <p>Dedicated counsellors, mindfulness sessions and a peer-mentoring programme keep our community thriving.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon">🌐</div>
-          <h3>Global Connections</h3>
-          <p>Exchange programmes with partner schools in Japan, Germany and Canada broaden every student's world.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon">🔬</div>
-          <h3>Modern Facilities</h3>
-          <p>Purpose-built science labs, a 500-seat auditorium, Olympic-size pool and fully equipped maker space.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon">📖</div>
-          <h3>Experienced Staff</h3>
-          <p>85 qualified teachers, 78% with postgraduate degrees, averaging 12 years of teaching experience.</p>
-        </div>
-        <div class="why-card reveal">
-          <div class="why-icon">💰</div>
-          <h3>Scholarship Opportunities</h3>
-          <p>Annual merit and needs-based scholarships ensuring access to an Evergreen education for all families.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════ COURSES ══════════════════ -->
-
-  <section class="courses section-pad">
-    <div class="container">
-      <div class="courses-header reveal">
-        <div class="tag">Academic Programmes</div>
-        <h2 class="section-title">Courses We Offer</h2>
-        <p class="section-sub">From our youngest learners to our A-Level students, we offer structured, inspiring pathways at every stage of education.</p>
-      </div>
+<section class="section-pad bg-white">
+<div class="container">
+<div class="section-header reveal">
+<div class="tag">Campus Life</div>
+<h2 class="section-title">Our School in Pictures</h2>
+<p class="section-sub">A glimpse into the vibrant daily life at Evergreen Academy. Click any photo to view it larger.</p>
+</div>
+<div class="gallery-filters">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="classrooms">Classrooms</button>
+<button class="filter-btn" data-filter="sports">Sports</button>
+<button class="filter-btn" data-filter="campus">Campus</button>
+</div>
+<div class="gallery-grid">
 
 ```
-  <!-- Tab buttons -->
-  <div class="tab-buttons">
-    <button class="tab-btn active" data-tab="eyfs">Early Years</button>
-    <button class="tab-btn" data-tab="primary">Primary</button>
-    <button class="tab-btn" data-tab="secondary">Secondary</button>
-    <button class="tab-btn" data-tab="sixth">Sixth Form</button>
-  </div>
+<div class="gallery-item" data-category="classrooms" data-caption="Students engaged in class">
+<img src="images/kids-class.jpg" alt="Students in class">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
 
-  <!-- Early Years -->
-  <div class="tab-panel active" id="panel-eyfs">
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#d8f0e2,#a8d8bc);">
-        <!--REPLACE: <img src="images/nursery.jpg" alt="Nursery">-->
-        🎨
-      </div>
-      <div class="course-body">
-        <div class="course-level">Foundation · Ages 3–4</div>
-        <h3>Nursery</h3>
-        <p>Play-based exploration of language, numbers, creativity and social skills in a warm, caring environment.</p>
-        <div class="course-tags">
-          <span class="course-tag">Half or Full Day</span>
-          <span class="course-tag">EYFS Framework</span>
-        </div>
-      </div>
-    </div>
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#fce8c8,#f8d090);">
-        <!--REPLACE: <img src="images/reception.jpg" alt="Reception">-->
-        🌈
-      </div>
-      <div class="course-body">
-        <div class="course-level">Foundation · Ages 4–5</div>
-        <h3>Reception</h3>
-        <p>The bridge to formal learning — phonics, early maths, PSHE and lots of hands-on discovery every day.</p>
-        <div class="course-tags">
-          <span class="course-tag">Full Day</span>
-          <span class="course-tag">EYFS Framework</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="gallery-item tall" data-category="campus" data-caption="Our beautiful school building">
+<img src="images/school-building.jpg" alt="School building">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
 
-  <!-- Primary -->
-  <div class="tab-panel" id="panel-primary">
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#e0f0d8,#b8d8a0);">
-        <!--REPLACE: <img src="images/ks1.jpg" alt="Key Stage 1">-->
-        ✏️
-      </div>
-      <div class="course-body">
-        <div class="course-level">Primary · Years 1–2 · Ages 5–7</div>
-        <h3>Key Stage 1</h3>
-        <p>English, Mathematics, Science, Art, PE and Computing aligned to the National Curriculum with specialist teachers.</p>
-        <div class="course-tags">
-          <span class="course-tag">National Curriculum</span>
-          <span class="course-tag">SATs Prep</span>
-        </div>
-      </div>
-    </div>
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#dce8ff,#a8c0f8);">
-        <!--REPLACE: <img src="images/ks2.jpg" alt="Key Stage 2">-->
-        📐
-      </div>
-      <div class="course-body">
-        <div class="course-level">Primary · Years 3–6 · Ages 7–11</div>
-        <h3>Key Stage 2</h3>
-        <p>Deeper study in core subjects plus French or Mandarin, History, Geography, Religious Studies and Music.</p>
-        <div class="course-tags">
-          <span class="course-tag">National Curriculum</span>
-          <span class="course-tag">KS2 SATs</span>
-        </div>
-      </div>
-    </div>
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#f0d8f0,#e0a8e0);">
-        <!--REPLACE: <img src="images/arts.jpg" alt="Creative Arts">-->
-        🎵
-      </div>
-      <div class="course-body">
-        <div class="course-level">Enrichment · All Year Groups</div>
-        <h3>Creative Arts &amp; Music</h3>
-        <p>Individual instrument tuition, school orchestra, art club and end-of-term drama productions for all ages.</p>
-        <div class="course-tags">
-          <span class="course-tag">Elective</span>
-          <span class="course-tag">Graded Exams</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="gallery-item" data-category="classrooms" data-caption="Modern bright classroom">
+<img src="images/classroom-bright.jpg" alt="Bright classroom">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
 
-  <!-- Secondary -->
-  <div class="tab-panel" id="panel-secondary">
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#d8ecf8,#a0c8f0);">
-        <!--REPLACE: <img src="images/ks3.jpg" alt="Key Stage 3">-->
-        🔭
-      </div>
-      <div class="course-body">
-        <div class="course-level">Secondary · Years 7–9 · Ages 11–14</div>
-        <h3>Key Stage 3</h3>
-        <p>Broad curriculum across Sciences, Humanities, Languages, Technology and the Creative Arts with specialist staff.</p>
-        <div class="course-tags">
-          <span class="course-tag">National Curriculum</span>
-          <span class="course-tag">3 Sciences</span>
-        </div>
-      </div>
-    </div>
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#f8e8d0,#f0c890);">
-        <!--REPLACE: <img src="images/igcse.jpg" alt="IGCSE">-->
-        📊
-      </div>
-      <div class="course-body">
-        <div class="course-level">GCSE / IGCSE · Years 10–11 · Ages 14–16</div>
-        <h3>IGCSE Programme</h3>
-        <p>Cambridge IGCSE in up to 12 subjects including Sciences, Humanities, Modern Languages and Business Studies.</p>
-        <div class="course-tags">
-          <span class="course-tag">Cambridge IGCSE</span>
-          <span class="course-tag">12 Subjects</span>
-        </div>
-      </div>
-    </div>
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#e8f8e0,#b8f0a0);">
-        <!--REPLACE: <img src="images/sports.jpg" alt="Sports Academy">-->
-        🏃
-      </div>
-      <div class="course-body">
-        <div class="course-level">Enrichment · Years 7–11</div>
-        <h3>Sports Academy</h3>
-        <p>Football, netball, swimming, tennis and athletics with competitive fixtures and elite development squads.</p>
-        <div class="course-tags">
-          <span class="course-tag">Competitive</span>
-          <span class="course-tag">GCSE PE</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="gallery-item" data-category="sports" data-caption="School sports facilities">
+<img src="images/sports-pitch.jpg" alt="Sports pitch">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
 
-  <!-- Sixth Form -->
-  <div class="tab-panel" id="panel-sixth">
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#d8d8f8,#a8a8f0);">
-        <!--REPLACE: <img src="images/sciences.jpg" alt="A-Level Sciences">-->
-        🎓
-      </div>
-      <div class="course-body">
-        <div class="course-level">A-Level · Years 12–13 · Ages 16–18</div>
-        <h3>A-Level Sciences</h3>
-        <p>Biology, Chemistry, Physics and Mathematics with a strong record of Oxbridge and medical school entry.</p>
-        <div class="course-tags">
-          <span class="course-tag">A-Level</span>
-          <span class="course-tag">EPQ Available</span>
-        </div>
-      </div>
-    </div>
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#f8d8d8,#f0a0a0);">
-        <!--REPLACE: <img src="images/humanities.jpg" alt="A-Level Humanities">-->
-        📝
-      </div>
-      <div class="course-body">
-        <div class="course-level">A-Level · Years 12–13 · Ages 16–18</div>
-        <h3>A-Level Humanities</h3>
-        <p>English Literature, History, Economics, Psychology, Sociology, Politics and Law with expert university guidance.</p>
-        <div class="course-tags">
-          <span class="course-tag">A-Level</span>
-          <span class="course-tag">UCAS Support</span>
-        </div>
-      </div>
-    </div>
-    <div class="course-card">
-      <div class="course-banner" style="background:linear-gradient(135deg,#d8f8f0,#90f0d8);">
-        <!--REPLACE: <img src="images/computing.jpg" alt="Computer Science">-->
-        💻
-      </div>
-      <div class="course-body">
-        <div class="course-level">A-Level · Years 12–13 · Ages 16–18</div>
-        <h3>Computer Science &amp; Technology</h3>
-        <p>Programming, algorithms, cyber security and AI fundamentals with an industry mentorship scheme included.</p>
-        <div class="course-tags">
-          <span class="course-tag">A-Level</span>
-          <span class="course-tag">Industry Links</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="gallery-item" data-category="classrooms" data-caption="Creative decorated classroom">
+<img src="images/classroom-decorated.jpg" alt="Decorated classroom">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
+
+<div class="gallery-item tall" data-category="campus" data-caption="School campus and grounds">
+<img src="images/school-grounds.jpg" alt="School grounds">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
+
+<div class="gallery-item" data-category="classrooms" data-caption="Science classroom with plants">
+<img src="images/classroom-green.jpg" alt="Science classroom">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
+
+<div class="gallery-item" data-category="campus" data-caption="Sunlit school corridor">
+<img src="images/hero.jpg" alt="School corridor">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
+
+<div class="gallery-item" data-category="sports" data-caption="School basketball court">
+<img src="images/campus-court.jpg" alt="Basketball court">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
+
+<div class="gallery-item" data-category="campus" data-caption="School walkway and nature">
+<img src="images/campus-walkway.jpg" alt="School walkway">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
+
+<div class="gallery-item" data-category="classrooms" data-caption="Secondary classroom">
+<img src="images/classroom-students.jpg" alt="Secondary classroom">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
+
+<div class="gallery-item" data-category="campus" data-caption="Outdoor seating area">
+<img src="images/campus-garden.jpg" alt="Campus garden">
+<div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
+</div>
 
 </div>
 ```
 
-  </section>
-
-  <!-- ══════════════════ GALLERY ══════════════════ -->
-
-  <section class="gallery-section section-pad">
-    <div class="container">
-      <div class="gallery-header reveal">
-        <div class="tag">Campus Life</div>
-        <h2 class="section-title">Our School in Pictures</h2>
-        <p class="section-sub">A glimpse into the vibrant daily life at Evergreen Academy. Click any photo to view it larger.</p>
-      </div>
-
-```
-  <div class="gallery-filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="classrooms">Classrooms</button>
-    <button class="filter-btn" data-filter="sports">Sports</button>
-    <button class="filter-btn" data-filter="arts">Arts</button>
-    <button class="filter-btn" data-filter="campus">Campus</button>
-    <button class="filter-btn" data-filter="events">Events</button>
-  </div>
-
-  <div class="gallery-grid">
-    <!--
-      HOW TO REPLACE GALLERY IMAGES:
-      Inside each .gallery-item, delete the .gallery-placeholder div
-      and replace with: <img src="images/your-photo.jpg" alt="Description">
-      Keep the .gallery-overlay div as it is.
-    -->
-    <div class="gallery-item" data-category="classrooms" data-caption="Interactive STEM lab session">
-      <div class="gallery-placeholder">🔬<small>STEM Lab</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item tall" data-category="campus" data-caption="Our beautiful main building">
-      <div class="gallery-placeholder">🏫<small>Main Building</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="sports" data-caption="Varsity football training session">
-      <div class="gallery-placeholder">⚽<small>Football</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="arts" data-caption="Annual end-of-year drama production">
-      <div class="gallery-placeholder">🎭<small>Drama</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="events" data-caption="Graduation ceremony 2024">
-      <div class="gallery-placeholder">🎓<small>Graduation</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="classrooms" data-caption="Primary class reading circle">
-      <div class="gallery-placeholder">📚<small>Reading</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="sports" data-caption="Annual swimming gala day">
-      <div class="gallery-placeholder">🏊<small>Swimming</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item tall" data-category="arts" data-caption="Student art exhibition showcase">
-      <div class="gallery-placeholder">🎨<small>Art Show</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="campus" data-caption="Library and study spaces">
-      <div class="gallery-placeholder">📖<small>Library</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="events" data-caption="International Culture Day celebration">
-      <div class="gallery-placeholder">🌍<small>Culture Day</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="campus" data-caption="The school garden project">
-      <div class="gallery-placeholder">🌿<small>Garden</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-    <div class="gallery-item" data-category="events" data-caption="Annual science fair showcase">
-      <div class="gallery-placeholder">🚀<small>Science Fair</small></div>
-      <div class="gallery-overlay"><div class="gallery-overlay-icon">🔍</div></div>
-    </div>
-  </div>
 </div>
-```
+</section>
 
-  </section>
+<!-- Lightbox -->
 
-  <!-- Lightbox (DO NOT REMOVE) -->
-
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
-    <div class="lightbox-inner">
-      <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
-      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
-      <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
-      <div class="lightbox-media" id="lbMedia"></div>
-      <div class="lightbox-caption" id="lbCaption"></div>
-    </div>
-  </div>
-
-  <!-- ══════════════════ TEAM ══════════════════ -->
-
-  <section class="team section-pad">
-    <div class="container">
-      <div class="team-header reveal">
-        <div class="tag">Leadership</div>
-        <h2 class="section-title">Meet Our Team</h2>
-      </div>
-      <div class="team-grid">
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <!--REPLACE: <img src="images/helen.jpg" alt="Dr. Helen Osei">-->
-            👩‍💼
-          </div>
-          <h3>Dr. Helen Osei</h3>
-          <p>Headteacher</p>
-        </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <!--REPLACE: <img src="images/james.jpg" alt="Mr. James Park">-->
-            👨‍🏫
-          </div>
-          <h3>Mr. James Park</h3>
-          <p>Deputy Head</p>
-        </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <!--REPLACE: <img src="images/priya.jpg" alt="Ms. Priya Nair">-->
-            👩‍🔬
-          </div>
-          <h3>Ms. Priya Nair</h3>
-          <p>Head of Sciences</p>
-        </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <!--REPLACE: <img src="images/tom.jpg" alt="Mr. Tom Adeyemi">-->
-            👨‍🎨
-          </div>
-          <h3>Mr. Tom Adeyemi</h3>
-          <p>Head of Arts</p>
-        </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <!--REPLACE: <img src="images/lucy.jpg" alt="Ms. Lucy Chen">-->
-            👩‍💻
-          </div>
-          <h3>Ms. Lucy Chen</h3>
-          <p>Head of Technology</p>
-        </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">
-            <!--REPLACE: <img src="images/kofi.jpg" alt="Mr. Kofi Mensah">-->
-            👨‍⚕️
-          </div>
-          <h3>Mr. Kofi Mensah</h3>
-          <p>Head of Wellbeing</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════ FAQs ══════════════════ -->
-
-  <section class="faqs section-pad">
-    <div class="container">
-      <div class="faqs-layout">
-
-```
-    <div class="reveal">
-      <div class="tag">FAQs</div>
-      <h2 class="section-title" style="margin-bottom:1.5rem;">Frequently Asked Questions</h2>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          What age groups does Evergreen cater for?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">We welcome students from age 3 (Nursery) through to 18 (Year 13). Each stage has its own dedicated faculty and tailored facilities.</div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          What is the admissions process?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">Families complete an online application, attend an open day, and students sit a short age-appropriate assessment. Offers are made on a rolling basis throughout the year.</div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Does Evergreen offer scholarships or bursaries?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">Yes — we offer Academic, Arts and Sports scholarships annually, plus needs-based bursaries covering up to 100% of fees. Applications open each January.</div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          What curriculum do you follow?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">We follow the English National Curriculum in Primary, Cambridge IGCSE in Years 10–11, and Cambridge A-Levels in the Sixth Form, with EPQ also available.</div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Is there a school uniform?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">Yes, all students from Nursery to Year 11 wear a smart uniform in our school colours (forest green and white). Sixth Formers follow a business casual dress code.</div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          What before and after school care is available?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">We offer a supervised Breakfast Club from 7:30 am and After-School Care until 6:00 pm, plus holiday care during half-terms.</div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          How does the school support additional learning needs?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">Our dedicated SENCo team provides tailored support plans, small-group interventions, assistive technology and close liaison with external specialists.</div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="reveal">
-      <div class="faq-cta-card">
-        <h3>Still have questions?</h3>
-        <p>Our friendly admissions team is happy to answer anything — from fees and facilities to daily school life and transport.</p>
-        <a href="contact.html" class="btn btn-white">Get in Touch</a>
-      </div>
-    </div>
-
-  </div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+<div class="lightbox-inner">
+<button class="lb-close" id="lbClose">✕</button>
+<button class="lb-nav lb-prev" id="lbPrev">‹</button>
+<button class="lb-nav lb-next" id="lbNext">›</button>
+<div class="lightbox-media" id="lbMedia"></div>
+<div class="lightbox-caption" id="lbCaption"></div>
 </div>
-```
+</div>
 
-  </section>
+<!-- ══ TEAM ══ -->
+
+<section class="section-pad bg-warm">
+<div class="container">
+<div class="section-header reveal">
+<div class="tag">Leadership</div>
+<h2 class="section-title">Meet Our Team</h2>
+</div>
+<div class="team-grid">
+<div class="team-card reveal"><div class="team-avatar">👩‍💼</div><h3>Dr. Helen Osei</h3><p>Headteacher</p></div>
+<div class="team-card reveal"><div class="team-avatar">👨‍🏫</div><h3>Mr. James Park</h3><p>Deputy Head</p></div>
+<div class="team-card reveal"><div class="team-avatar">👩‍🔬</div><h3>Ms. Priya Nair</h3><p>Head of Sciences</p></div>
+<div class="team-card reveal"><div class="team-avatar">👨‍🎨</div><h3>Mr. Tom Adeyemi</h3><p>Head of Arts</p></div>
+<div class="team-card reveal"><div class="team-avatar">👩‍💻</div><h3>Ms. Lucy Chen</h3><p>Head of Technology</p></div>
+<div class="team-card reveal"><div class="team-avatar">👨‍⚕️</div><h3>Mr. Kofi Mensah</h3><p>Head of Wellbeing</p></div>
+</div>
+</div>
+</section>
+
+<!-- ══ FAQs ══ -->
+
+<section class="section-pad bg-cream">
+<div class="container faqs-layout">
+<div class="reveal">
+<div class="tag">FAQs</div>
+<h2 class="section-title" style="margin-bottom:1.5rem">Frequently Asked Questions</h2>
+<div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What age groups does Evergreen cater for?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">We welcome students from age 3 (Nursery) through to 18 (Year 13). Each stage has its own dedicated faculty and tailored facilities.</div></div></div>
+<div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What is the admissions process?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Families complete an online application, attend an open day, and students sit a short age-appropriate assessment. Offers are made on a rolling basis throughout the year.</div></div></div>
+<div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Does Evergreen offer scholarships or bursaries?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Yes — we offer Academic, Arts and Sports scholarships annually, plus needs-based bursaries covering up to 100% of fees. Applications open each January.</div></div></div>
+<div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What curriculum do you follow?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">We follow the English National Curriculum in Primary, Cambridge IGCSE in Years 10–11, and Cambridge A-Levels in the Sixth Form, with EPQ also available.</div></div></div>
+<div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Is there a school uniform?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Yes, all students from Nursery to Year 11 wear a smart uniform in our school colours (forest green and white). Sixth Formers follow a business casual dress code.</div></div></div>
+<div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What before and after school care is available?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">We offer a supervised Breakfast Club from 7:30 am and After-School Care until 6:00 pm, plus holiday care during half-terms.</div></div></div>
+</div>
+<div class="reveal">
+<div class="faq-cta-card">
+<h3>Still have questions?</h3>
+<p>Our friendly admissions team is happy to answer anything — from fees and facilities to daily school life and transport.</p>
+<a href="contact.html" class="btn btn-white">Get in Touch</a>
+<a href="https://wa.me/44020123456" target="_blank" class="btn btn-whatsapp" style="margin-top:0.8rem">
+💬 WhatsApp Us
+</a>
+</div>
+</div>
+</div>
+</section>
 
 </main>
 
-<!-- ══════════════════ FOOTER ══════════════════ -->
+<!-- ══ FOOTER ══ -->
 
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <h4>🌿 Evergreen Academy</h4>
-        <p>Nurturing curious minds and confident hearts since 2005. A place where every child truly belongs.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact</a>
-          <a href="contact.html">Admissions</a>
-        </div>
-      </div>
-      <div>
-        <h4>Programmes</h4>
-        <div class="footer-links">
-          <a href="about.html">Early Years</a>
-          <a href="about.html">Primary School</a>
-          <a href="about.html">Secondary School</a>
-          <a href="about.html">Sixth Form</a>
-        </div>
-      </div>
-      <div>
-        <h4>Contact Us</h4>
-        <div class="footer-links">
-          <a href="#">📍 12 Greenfield Road, London</a>
-          <a href="tel:+44020123456">📞 +44 020 1234 5678</a>
-          <a href="mailto:info@evergreenacademy.ac">✉️ info@evergreenacademy.ac</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 Evergreen Academy. All rights reserved.</span>
-      <span>Privacy Policy · Terms of Use</span>
-    </div>
-  </div>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<h4>🌿 Evergreen Academy</h4>
+<p>Nurturing curious minds and confident hearts since 2005. A place where every child truly belongs.</p>
+<div class="footer-social">
+<a href="https://wa.me/44020123456" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+<a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+<a href="#" class="social-icon" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+<a href="#" class="social-icon" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+</div>
+</div>
+<div><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="contact.html">Admissions</a></div></div>
+<div><h4>Programmes</h4><div class="footer-links"><a href="about.html">Early Years</a><a href="about.html">Primary School</a><a href="about.html">Secondary School</a><a href="about.html">Sixth Form</a></div></div>
+<div><h4>Contact Us</h4><div class="footer-links"><a href="#">📍 12 Greenfield Road, London</a><a href="tel:+44020123456">📞 +44 020 1234 5678</a><a href="mailto:info@evergreenacademy.ac">✉️ info@evergreenacademy.ac</a><a href="https://wa.me/44020123456" target="_blank">💬 WhatsApp Us</a></div></div>
+</div>
+<div class="footer-bottom"><span>© 2025 Evergreen Academy. All rights reserved.</span><span>Privacy Policy · Terms of Use</span></div>
+</div>
 </footer>
 
 <script src="script.js"></script>
