@@ -8,7 +8,7 @@ SHARED — HAMBURGER MENU
 ════════════════════════════════════════════ */
 function toggleMenu() {
 const menu = document.getElementById(‘mobileNav’);
-const btn  = document.querySelector(’.hamburger’);
+const btn = document.querySelector(’.hamburger’);
 if (!menu || !btn) return;
 menu.classList.toggle(‘open’);
 btn.classList.toggle(‘open’);
@@ -19,9 +19,9 @@ document.addEventListener(‘DOMContentLoaded’, function () {
 document.querySelectorAll(’.mobile-nav a’).forEach(function (link) {
 link.addEventListener(‘click’, function () {
 var menu = document.getElementById(‘mobileNav’);
-var btn  = document.querySelector(’.hamburger’);
+var btn = document.querySelector(’.hamburger’);
 if (menu) menu.classList.remove(‘open’);
-if (btn)  btn.classList.remove(‘open’);
+if (btn) btn.classList.remove(‘open’);
 });
 });
 });
@@ -59,19 +59,19 @@ entries.forEach(function (entry) {
 if (!entry.isIntersecting) return;
 
 ```
-  var el      = entry.target;
-  var target  = parseInt(el.getAttribute('data-target'), 10);
-  var suffix  = el.getAttribute('data-suffix') || '';
-  var count   = 0;
-  var step    = Math.ceil(target / 60);
+var el = entry.target;
+var target = parseInt(el.getAttribute('data-target'), 10);
+var suffix = el.getAttribute('data-suffix') || '';
+var count = 0;
+var step = Math.ceil(target / 60);
 
-  var timer = setInterval(function () {
-    count = Math.min(count + step, target);
-    el.textContent = count + suffix;
-    if (count >= target) clearInterval(timer);
-  }, 28);
+var timer = setInterval(function () {
+count = Math.min(count + step, target);
+el.textContent = count + suffix;
+if (count >= target) clearInterval(timer);
+}, 28);
 
-  observer.unobserve(el);
+observer.unobserve(el);
 });
 ```
 
@@ -98,10 +98,10 @@ p.classList.remove(‘active’);
 });
 
 ```
-  /* activate clicked */
-  btn.classList.add('active');
-  var panel = document.getElementById('panel-' + btn.getAttribute('data-tab'));
-  if (panel) panel.classList.add('active');
+/* activate clicked */
+btn.classList.add('active');
+var panel = document.getElementById('panel-' + btn.getAttribute('data-tab'));
+if (panel) panel.classList.add('active');
 });
 ```
 
@@ -112,7 +112,7 @@ p.classList.remove(‘active’);
 ABOUT — FAQ ACCORDION
 ════════════════════════════════════════════ */
 function toggleFaq(btn) {
-var item   = btn.closest(’.faq-item’);
+var item = btn.closest(’.faq-item’);
 var isOpen = item.classList.contains(‘open’);
 
 /* Close all */
@@ -128,18 +128,18 @@ if (!isOpen) item.classList.add(‘open’);
 ABOUT — GALLERY FILTER + LIGHTBOX
 ════════════════════════════════════════════ */
 (function initGallery() {
-var items    = document.querySelectorAll(’.gallery-item’);
+var items = document.querySelectorAll(’.gallery-item’);
 var lightbox = document.getElementById(‘lightbox’);
-var lbMedia  = document.getElementById(‘lbMedia’);
-var lbCap    = document.getElementById(‘lbCaption’);
-var lbClose  = document.getElementById(‘lbClose’);
-var lbPrev   = document.getElementById(‘lbPrev’);
-var lbNext   = document.getElementById(‘lbNext’);
+var lbMedia = document.getElementById(‘lbMedia’);
+var lbCap = document.getElementById(‘lbCaption’);
+var lbClose = document.getElementById(‘lbClose’);
+var lbPrev = document.getElementById(‘lbPrev’);
+var lbNext = document.getElementById(‘lbNext’);
 
 if (!items.length || !lightbox) return;
 
 var currentIndex = 0;
-var visible      = [];
+var visible = [];
 
 function getVisible() {
 return Array.prototype.filter.call(items, function (item) {
@@ -153,12 +153,12 @@ if (!item) return;
 
 ```
 var img = item.querySelector('img');
-var ph  = item.querySelector('.gallery-placeholder');
+var ph = item.querySelector('.gallery-placeholder');
 
 if (img) {
-  lbMedia.innerHTML = '<img src="' + img.src + '" alt="' + (img.alt || '') + '">';
+lbMedia.innerHTML = '<img src="' + img.src + '" alt="' + (img.alt || '') + '">';
 } else if (ph) {
-  lbMedia.innerHTML = '<div class="lightbox-placeholder-content">' + ph.innerHTML + '</div>';
+lbMedia.innerHTML = '<div class="lightbox-placeholder-content">' + ph.innerHTML + '</div>';
 }
 
 lbCap.textContent = item.getAttribute('data-caption') || '';
@@ -168,7 +168,7 @@ currentIndex = idx;
 }
 
 function openLightbox(item) {
-visible      = getVisible();
+visible = getVisible();
 currentIndex = visible.indexOf(item);
 showItem(currentIndex);
 lightbox.classList.add(‘open’);
@@ -208,8 +208,8 @@ if (e.target === lightbox) closeLightbox();
 /* Keyboard */
 document.addEventListener(‘keydown’, function (e) {
 if (!lightbox.classList.contains(‘open’)) return;
-if (e.key === ‘Escape’)     closeLightbox();
-if (e.key === ‘ArrowLeft’)  prevItem();
+if (e.key === ‘Escape’) closeLightbox();
+if (e.key === ‘ArrowLeft’) prevItem();
 if (e.key === ‘ArrowRight’) nextItem();
 });
 
@@ -234,13 +234,13 @@ filterBtns.forEach(function (b) { b.classList.remove(‘active’); });
 btn.classList.add(‘active’);
 
 ```
-  var filter = btn.getAttribute('data-filter');
-  items.forEach(function (item) {
-    var cat = item.getAttribute('data-category');
-    item.classList.toggle('hidden', filter !== 'all' && cat !== filter);
-  });
+var filter = btn.getAttribute('data-filter');
+items.forEach(function (item) {
+var cat = item.getAttribute('data-category');
+item.classList.toggle('hidden', filter !== 'all' && cat !== filter);
+});
 
-  visible = getVisible();
+visible = getVisible();
 });
 ```
 
@@ -309,22 +309,22 @@ return valid;
 }
 
 function submitForm() {
-var btn     = document.getElementById(‘submitBtn’);
+var btn = document.getElementById(‘submitBtn’);
 var spinner = document.getElementById(‘formSpinner’);
 var btnText = document.getElementById(‘btnText’);
 var success = document.getElementById(‘successMsg’);
-var fail    = document.getElementById(‘failMsg’);
+var fail = document.getElementById(‘failMsg’);
 
 if (success) success.classList.remove(‘show’);
-if (fail)    fail.classList.remove(‘show’);
+if (fail) fail.classList.remove(‘show’);
 
 var checks = [
 validateField(‘firstName’, function (el) { return el.value.trim().length > 0; }),
-validateField(‘lastName’,  function (el) { return el.value.trim().length > 0; }),
-validateField(‘email’,     function (el) { return /^[^\s@]+@[^\s@]+.[^\s@]+$/.test(el.value.trim()); }),
-validateField(‘role’,      function (el) { return el.value.trim().length > 0; }),
-validateField(‘subject’,   function (el) { return el.value.trim().length > 0; }),
-validateField(‘message’,   function (el) { return el.value.trim().length >= 10; }),
+validateField(‘lastName’, function (el) { return el.value.trim().length > 0; }),
+validateField(‘email’, function (el) { return /^[^\s@]+@[^\s@]+.[^\s@]+$/.test(el.value.trim()); }),
+validateField(‘role’, function (el) { return el.value.trim().length > 0; }),
+validateField(‘subject’, function (el) { return el.value.trim().length > 0; }),
+validateField(‘message’, function (el) { return el.value.trim().length >= 10; }),
 (function () {
 var cb = document.getElementById(‘consent’);
 var fg = document.getElementById(‘fg-consent’);
@@ -343,32 +343,32 @@ return;
 }
 
 /* Loading state */
-if (btn)     btn.disabled = true;
+if (btn) btn.disabled = true;
 if (spinner) spinner.style.display = ‘block’;
 if (btnText) btnText.textContent = ‘Sending…’;
 
 /* Simulate sending — replace with real fetch() when ready */
 setTimeout(function () {
 if (spinner) spinner.style.display = ‘none’;
-if (btn)     btn.disabled = false;
+if (btn) btn.disabled = false;
 if (btnText) btnText.textContent = ‘Send Message’;
 
 ```
 /* Clear fields */
 ['firstName','lastName','email','phone','subject','message'].forEach(function (id) {
-  var el = document.getElementById(id);
-  if (el) el.value = '';
+var el = document.getElementById(id);
+if (el) el.value = '';
 });
 ['role','year','contactMethod','hearAbout'].forEach(function (id) {
-  var el = document.getElementById(id);
-  if (el) el.value = '';
+var el = document.getElementById(id);
+if (el) el.value = '';
 });
 var cb = document.getElementById('consent');
 if (cb) cb.checked = false;
 
 if (success) {
-  success.classList.add('show');
-  success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+success.classList.add('show');
+success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 ```
 
